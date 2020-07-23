@@ -1,0 +1,298 @@
+/* color */
+$Waite-color: white;
+$Black-color: black;
+$Pink-color: #C5A4AC;
+$Purple-color: #A08EA2;
+$Plue-color: #336d88;
+$Red-color: red;
+$DarkRed-color: darkred;
+$Green-color: green;
+
+/* font */
+$Bold-style : bold;
+/* center */
+$Center: center;
+
+
+body{
+    overflow-x: hidden;
+}
+
+/* start nav style*/
+.navbar{
+    background: rgba(0, 0, 0, 0.6)!important;
+}
+
+
+
+.bg-dark{
+    opacity: 0.4px;
+}
+
+
+/* start logo style */
+#text-one{
+    letter-spacing: 4px;
+    font-style: $Bold-style;
+    font-weight: 700;
+}
+
+#text-tow{
+    color: $Pink-color;
+    font-size: 16px;
+    font-style: $Bold-style;
+    position: relative;
+    top: 5px;
+} 
+/* end logo style */
+/* end  nav style  */
+
+
+/* start slider style */
+
+.carousel-item{
+    height: 100vh;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.img-one{
+    background-image: url('../images/paris.jpg'); 
+}
+
+.img-two{
+    background-image: url('../images/USA.jpg');
+}
+
+.carousel-caption{
+    position: absolute;
+    font-style: $Bold-style;
+    top: 40%;
+}
+
+
+
+#welcome{
+   font-size: 2.6rem;
+   color: $Waite-color;
+}
+
+#boutton-one{
+    margin-top: 20px;
+    width: 50%;
+
+    &:hover{
+      background-color: $Black-color;
+      color: $Waite-color;
+    }
+}
+/* end  slider style*/
+
+
+/* start form style */
+.form-continer{
+   background: linear-gradient($Purple-color, $Pink-color);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: $Center;
+    align-items: $Center;
+}
+
+form{
+    margin: 10px;
+}
+
+.textD{
+    font-size: 20px;
+}
+
+.button-style{
+    align-content: $Center;
+    justify-content: $Center;
+}
+
+#save,
+#delete
+ {
+    margin: 5px;
+    width: 44%;
+
+    &:hover{
+        background-color: $Black-color;
+        color: $Waite-color;
+    }
+}
+
+
+/* end form style */
+
+/* title style */
+#planner,
+#trip-planner,
+#table-title,
+#toDo-tatle{
+    font-size: 2rem;
+    text-align: $Center;
+}
+
+
+/* start result style */
+
+.result{
+    height: 100%;
+    margin: 10px;
+}  
+
+#resultTitle{
+    color : $Pink-color;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#resultTitle,
+#trip,
+#Departing,
+#Arriving,
+#tripLenght,
+#temp,
+#cloud{
+    margin: 1px;
+    font-weight: 700;
+}
+
+.style{
+  color: $Plue-color;
+}
+
+#save-two,
+#addTrip,
+#addToDo{
+    display: none;
+    background: linear-gradient($Purple-color, $Pink-color);
+    border-radius: 10px;
+    margin: auto;
+    padding: auto;
+    margin-bottom: 10px;
+    width: 120px;
+  
+
+    &:hover{
+        background: linear-gradient($Black-color, $Black-color);
+        color:  $Waite-color;
+      
+    }
+}
+/* end result style */
+
+/* start table style */
+.table-continer{
+    background: linear-gradient($Purple-color, $Pink-color);
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;;  
+} 
+
+#data-table{
+    margin: auto;
+    padding: auto;
+    width: 80%;
+}
+
+.Thead,
+.Tbody{
+    padding: 3.5px;
+    text-align: $Center;
+}
+
+.Tbody{
+    color: $Plue-color;
+}
+
+.delteteItem{
+    &:hover{
+        background-color: $DarkRed-color;
+    }
+}
+/*end table style  */ 
+
+/* start toDo style*/
+.ToDo-Continetr{
+    background: linear-gradient($Purple-color, $Pink-color);
+    padding-top:  10px;
+    align-content: $Center;
+}
+
+#list-field{
+    width: 60%;
+    border: 1px solid $Black-color;
+    padding-bottom: 10px;
+    margin-left: 5px;
+}
+
+#addBtn{
+    width: 30%;
+    height: 35px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+
+    &:hover{
+        background-color: $Black-color ;
+        color: white;
+    }
+}
+
+.list-Content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    height: 40px;
+    padding: 5px;
+    background-color: $Waite-color;
+    margin: 10px;
+    border: 1px solid $Black-color;
+    text-align: left;   
+}
+
+#list{
+    margin-top: 15px;
+}
+
+#trash{
+    color: $Red-color;
+    margin-top: 5px;
+}
+
+#done{
+    color: $Green-color;
+    margin-top: 5px;
+}
+
+.black-T{
+    color: $Black-color;
+    font-style: $Bold-style;
+}
+/* end toDo style*/
+
+
+/* start footer style */
+footer{
+    background: linear-gradient($Purple-color, $Pink-color);
+    margin-top: 30px;
+    padding: 15px;
+}
+
+footer{
+
+    .icons{
+        color: $Waite-color; 
+    }    
+}
+/* end footer style */
+
+
+
+
+
