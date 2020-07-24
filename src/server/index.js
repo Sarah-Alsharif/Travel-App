@@ -28,11 +28,6 @@ app.listen(3001, function() {
 
 
 
-app.get('/test', function(req , res){
-    res.status(200).json({done: "done"})
-});
-
-
 
 
 
