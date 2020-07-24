@@ -81,7 +81,7 @@
     <!--start form-->
     <div class="form-continer">
       <h2 id="planner"> Enter your Travel planner</h2>
-      <form onsubmit="return getData()" id="Add-trip">
+      <form  id="Add-trip">
         <!--row 1-->
         <div class="form-group row">
           <label class="col-lg-12 col-md-5 col-sm-5 textD">My trip to:</label>
@@ -106,8 +106,7 @@
 
         <!--row 3-->
         <div class="form-group row button-style">
-          <button id="save" type="button"class="btn btn-light" onclick="return Client.getData()" onsubmit="return getData()"
-           >Save Trip</button>
+          <button id="save" type="button"class="btn btn-light">Save Trip</button>
           <button id="delete" type="button" class="btn btn-light" onclick="return Client.clearForm()"
           >Delete Trip</button>
         </div>

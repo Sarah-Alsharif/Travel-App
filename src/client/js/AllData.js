@@ -1,4 +1,4 @@
-
+document.getElementById('save').addEventListener('click' , getData)
     function getData(){
 
         const date = new Date();
@@ -42,6 +42,4 @@ const clearForm = async () => {
     document.getElementById('Arriving-date').value = '';
 }
 
-
-export {getData}
 export {clearForm}
