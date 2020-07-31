@@ -12,10 +12,11 @@ document.getElementById('save').addEventListener('click' , getData)
       
     }
   
-    else{
+    else{ 
         Client.Get_Lat_Lng_Con(CityName)
         .then(function(data){
-    
+
+            console.log(data)
             const Latitude = data.geonames[0].lat;
             const longitude = data.geonames[0].lng;
             const country = data.geonames[0].countryName;

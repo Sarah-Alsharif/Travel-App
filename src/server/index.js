@@ -1,6 +1,23 @@
 var path = require('path')
 const express = require('express')
 const app = express()
+const dotenv = require('dotenv');
+dotenv.config();
+
+function GetKeys() {
+    const {User_Name , Weatherbit_Key , Pixabay_Key} = process.env;
+    return {
+
+        User_Name,
+        Weatherbit_Key,
+        Pixabay_Key
+    };
+}
+
+app.get('/Keys' , (req , res)=>{
+    const Keys = GetKeys();
+    res.send(Keys);
+})
 
 /* Middleware*/
 //Here we are configuring express to use body-parser as middle-ware.
